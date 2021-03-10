@@ -6,7 +6,7 @@ export const createSlots = (parking_slots,history)=> async dispatch=>
     try 
     {
        const res =await axios.post("http://localhost:8080/api/bookslot",parking_slots);
-        history.push("/payment");
+        history.push("/parkingSlotDashboard");
     } catch(errors){
         dispatch({
             type : GET_ERRORS,

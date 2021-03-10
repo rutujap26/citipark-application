@@ -27,11 +27,11 @@ import swal from 'sweetalert';
           <thead>
               <tr>
                   <th>ParkingSlotId</th>
-                  <th>Booking Date</th>
-                  <th>Parking Date</th>
-                  <th>Parking Duration</th>
-                  <th>Parking Time</th>
-                  <th>Actions</th>
+                  <th colSpan="3">Booking Date</th>
+                  <th colSpan="3">Parking Date</th>
+                  <th colSpan="3">Parking Duration</th>
+                  <th colSpan="2">Parking Time</th>
+                  <th colSpan="3" className="text-center">Actions</th>
                   
               </tr>
           </thead>
@@ -40,10 +40,10 @@ import swal from 'sweetalert';
                   return(
                       <tr key={index}>
                           <td>{value.parkingSlotId}</td>
-                          <td>{value.bookingDate}</td>
-                          <td>{value.parkingDate}</td>
-                          <td>{value.parkingDuration}</td>
-                          <td>{value.parkingTime}</td>
+                          <td colSpan="3">{value.bookingDate}</td>
+                          <td colSpan="3">{value.parkingDate}</td>
+                          <td colSpan="3">{value.parkingDuration}</td>
+                          <td colSpan="2">{value.parkingTime}</td>
                           
                          
                        
@@ -55,6 +55,7 @@ import swal from 'sweetalert';
                           </Link>
                           
                          <td><Button variant ="success" onClick={()=>this.onDeleteClick(value.parkingSlotId)}>DELETE</Button></td>
+                         <td><Button variant ="success" href="/payment">PAY</Button></td>
                           
                           
                          
