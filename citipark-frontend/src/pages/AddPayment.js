@@ -1,9 +1,15 @@
 import React  from 'react'
-
+import {Button} from 'react-bootstrap'
 
 const AddPayment = (props) => {
         return(
             <div className={"container"}>
+            <br />
+            <div className="float-right">
+               
+            <Button variant="danger" href="/dashboard">Logout</Button>
+            <br />
+            </div>
                
                 <h1 className="text-center" style={{ color: '#xdxdxd' }}>PAYMENT FOR BOOKING</h1>
                 <br></br>

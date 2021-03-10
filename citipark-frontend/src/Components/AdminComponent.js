@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { getPremises } from "../actions/ParkingPremiseActions";
 import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
+import {Button} from 'react-bootstrap'
 
 class AdminComponent extends React.Component {
     constructor(props) {
@@ -19,8 +20,13 @@ class AdminComponent extends React.Component {
         const { parkingPremises } = this.props.parkingPremises;
         return (
             <div className="admin" id="grad">
+            <br />
 
                 <div className="container">
+                <div className="float-right">
+               
+                <Button variant="danger" href="/dashboard">Logout</Button>
+                </div>
                     <div className="row">
                         <div className="col-md-12">
                             <br />
