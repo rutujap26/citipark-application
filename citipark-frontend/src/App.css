@@ -1,0 +1,321 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.site-footer {
+  background-color: #26272b;
+  /* padding: 45px 0 20px; */
+  font-size: 20px;
+  line-height: 20px;
+  /* padding-top: 10%; */
+  margin-top: 5%;
+
+  /* color: #737373; */
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer small {
+  color: #fff;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+    padding-top: 20%;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  background-color: #bbb;
+}
+
+.ParkingHero {
+  position: relative;
+  color: rgb(10, 10, 10);
+  /*Note, you can change the color to your choice depending on your 
+  image and what color blends with it*/
+}
+.ParkingHero::after {
+  content: "";
+  opacity: 0.8;
+  background: rgb(73, 85, 107)
+    url("C:\Users\LKANISHK\Desktop\Sprint citipark\citipark\src\images\parkinglot.jpg")
+    no-repeat fixed top;
+  background-blend-mode: exclusion;
+  /* also change the blend mode to what suits you, from darken, to other 
+  many options as you deem fit*/
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: -5;
+  height: 1000px;
+}
+.ParkingHero h4 {
+  font-family: "RocknRoll One", sans-serif;
+}
+.ParkingHero h1 {
+  font-family: "Oi", cursive;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 450px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
+.slots-table {
+  float: right;
+  color: #29aafe;
+}
+.header h1 {
+  text-align: center;
+}
+
+.card {
+  width: 350px;
+  border: none;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  border-radius: 12px;
+}
+
+.circle-image img {
+  border: 6px solid #fff;
+  border-radius: 100%;
+  padding: 9px;
+  top: -28px;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  z-index: 1;
+  background: #e7d184;
+  cursor: pointer;
+}
+
+.help-text {
+  margin-top: -21px;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.review {
+  margin-top: 22%;
+  background-color: #f7f6f6;
+}
+
+.dash-body {
+  background-color: #26272b;
+}
+
+/* Rutuja CSS */
+.parkingPremise {
+  width: 100%;
+  height: auto;
+  visibility: visible;
+  background: url("https://tindall-lawfirm.com/wp-content/uploads/2018/08/garage-1168637_960_720.jpg");
+}
+#grad {
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(185, 227, 247, 0),
+    rgb(140, 228, 255)
+  );
+}
+.vDash {
+  background: url("C:\Users\LKANISHK\Desktop\Sprint citipark\citipark\src\images\vehicle.jpg");
+  height: 100%;
+
+  background-position: "center";
+  background-repeat: "no-repeat";
+  flex: 1;
+  background-color: "rgba(0,0,0,0.60)";
+}
